@@ -1,0 +1,28 @@
+<!-- card -->
+<div class="rounded-xl shadow-lg bg-[#cbf3f0] mb-10 mr-10">
+    <div class="p-5 flex flex-col">
+        <div class="rounded-xl overflow-hidden">
+            <slot />
+        </div>
+        <slot name="title" />
+
+        <p class="text-slate-600 text-lg mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perferendis ut itaque ducimus atque! Natus doloribus fugit nemo
+            nobis non consequuntur odio laudantium veritatis corrupti, autem ex
+            obcaecati quas doloremque a?
+        </p>
+        <a
+            href="#"
+            class="text-center bg-blue-400 text-blue-800 py-2 rounded-lg font-semibold mt-4 hover:bg-[#2ec4b6] focus:scale-95 transition-all duration-200 uppercase"
+            >Comprar</a
+        >
+    </div>
+</div>
+
+<style>
+    .img {
+        width: 400px;
+        object-fit: cover;
+    }
+</style>

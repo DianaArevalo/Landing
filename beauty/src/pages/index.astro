@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import About from "./about.astro";
+import Content from "./content.astro";
+import Products from "./products.astro";
+import Contact from "./contact.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="text-black justify-center items-center place-content-center">
+		<section
+			class="bg-[rgb(255,255,255)] w-[95%] h-dvh m-5 md:m-10 rounded-2xl outline-offset-0 shadow-2xl overflow-auto touch-auto place-content-center"
+		>
+			<About />
+			<Content />
+			<Products />
+			<Contact />
+		</section>
+	</main>
+</Layout>

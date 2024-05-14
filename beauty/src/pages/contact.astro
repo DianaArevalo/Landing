@@ -1,0 +1,72 @@
+---
+import InteractiveBgAbout from "../components/InteractiveBgAbout.astro";
+import pretty from "../assets/pretty-woman.jpg";
+import AboutButton from "../components/AboutButton.astro";
+---
+
+<div
+    class="flex relative w-full h-screen bg-transparent rounded-lg place-content-center"
+>
+    <div class="min-h-screen w-[50%] bg-transparent">
+        <InteractiveBgAbout>
+            <div class="pretty">
+                <img src={pretty.src} ; alt="" class="rounded-2xl" />
+            </div>
+        </InteractiveBgAbout>
+    </div>
+    <div class="min-h-screen w-[50%] bg-transparent">
+        <form action="" class="p-10">
+            <div class="mb-10">
+                <label class="text-body block text-lx font-bold uppercase">
+                    nombre*
+                </label>
+                <input
+                    class="w-full mt-3 p-3 border rounded-xl bg-body"
+                    type="text"
+                    name="email"
+                    placeholder="Ingresa tu nombre"
+                />
+            </div>
+
+            <div class="mb-10">
+                <label class="text-body block text-lx font-bold uppercase">
+                    email*
+                </label>
+                <input
+                    class="w-full mt-3 p-3 border rounded-xl bg-body"
+                    type="email"
+                    name="email"
+                    placeholder="Ingresa tu nombre"
+                />
+            </div>
+
+            <div class="mb-10">
+                <label class="uppercase text-body block text-lx font-bold">
+                    comentarios*
+                </label>
+                <input
+                    class="w-full mt-3 p-3 border rounded-xl bg-body"
+                    type="password"
+                    name="password"
+                    placeholder="Ingresa tu experiencia con nosotros"
+                />
+            </div>
+            <div class="p-10">
+                <AboutButton> Enviar </AboutButton>
+            </div>
+        </form>
+        <!-- redes sociales -->
+    </div>
+</div>
+<style>
+    .pretty {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        text-align: center;
+    }
+
+    .pretty img {
+        width: 600px;
+    }
+</style>

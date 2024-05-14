@@ -1,0 +1,80 @@
+---
+import AboutButton from "../components/AboutButton.astro";
+import InteractiveBgCosmetic from "../components/InteractiveBgCosmetic.astro";
+import InteractiveBgBeauty from "../components/InteractiveBgBeauty.astro";
+import InteractiveBgHair from "../components/InteractiveBgHair.astro";
+import InteractiveBgTakeCare from "../components/InteractiveBgTakeCare.astro";
+---
+
+<section class="flex-col min-h-full p-10">
+    <div class="flex">
+        <div class="w-[50%] bg-transparent min-h-full p-5">
+            <h1
+                class="ml-5 mb-5 p-5 font-bold text-xl md:text-3xl uppercase place-content-center"
+            >
+                Cosmetica
+            </h1>
+            <p class="mb-5 text-sm md:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                fugiat, dolores quis assumenda vitae corporis totam magnam eum
+                nobis soluta illo, quam odio rem, repellat laborum quia amet
+                odit ea?
+            </p>
+            <AboutButton> Leer mas </AboutButton>
+        </div>
+        <InteractiveBgCosmetic />
+    </div>
+    <div class="flex">
+        <InteractiveBgBeauty />
+        <div class="w-[50%] bg-transparent min-h-full p-5">
+            <h1
+                class="ml-5 mb-5 p-5 font-bold text-xl md:text-3xl uppercase place-content-center"
+            >
+                Belleza
+            </h1>
+            <p class="mb-5 text-sm md:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate nemo quisquam magnam, numquam obcaecati aliquid ipsam
+                dolore ullam harum amet in qui itaque maxime
+            </p>
+            <AboutButton> Leer mas </AboutButton>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="w-[50%] bg-transparent min-h-full p-5">
+            <h1
+                class="ml-5 mb-5 p-5 font-bold text-xl md:text-3xl uppercase place-content-center"
+            >
+                Cabello
+            </h1>
+            <p class="mb-5 text-sm md:text-lg">
+                recusandae earum accusantium est fugit reiciendis deleniti,
+                impedit id laboriosam, explicabo, ex saepe?
+            </p>
+            <AboutButton> Leer mas </AboutButton>
+        </div>
+        <InteractiveBgHair />
+    </div>
+    <div class="flex">
+        <InteractiveBgTakeCare />
+        <div class="w-[50%] bg-transparent min-h-full p-5">
+            <h1
+                class="ml-5 mb-5 p-5 font-bold text-xl md:text-3xl uppercase place-content-center"
+            >
+                Cuidado personal
+            </h1>
+            <p class="mb-5 text-sm md:text-lg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                natus voluptas perspiciatis quos pariatur hic odit magni nemo
+                voluptatum dolores eum, fuga molestias? Delectus cumque
+                cupiditate, eum iusto animi ab.
+            </p>
+            <AboutButton> Leer mas </AboutButton>
+        </div>
+    </div>
+    <div
+        class="p-10 place-content-center justify-center items-center text-center"
+    >
+        <AboutButton> Nuestro Catalogo</AboutButton>
+    </div>
+</section>

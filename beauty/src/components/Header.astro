@@ -1,0 +1,51 @@
+---
+import HeaderButton from "./HeaderButton.astro";
+import Rafaela from "../assets/rafaela.png";
+---
+
+<div
+    class="bg-[rgb(255,255,255)] w-[95%] h-dvh m-5 md:m-10 rounded-2xl outline-offset-0 shadow-2xl overflow-auto touch-auto mb-1 place-content-center items-center md:flex-row relative"
+>
+    <div class="md:flex flex-wrap w-full static h-20">
+        <div class="left-0 top-0 p-8 absolute mb-5">
+            <a
+                href=""
+                class="text-2xl md:text-5xl font-bold font-serif text-teal-400"
+            >
+                Beauty!!
+            </a>
+        </div>
+        <div
+            class="md:w-[30%] w-96 top-0 right-0 md:font-4xl mr-10 md:absolute flex"
+        >
+            <nav
+                class="flex items-center justify-between text-center md:flex-row p-2 md:p-5"
+            >
+                <HeaderButton>Promos</HeaderButton>
+                <HeaderButton>Productos</HeaderButton>
+                <HeaderButton>Contactanos Ya!!</HeaderButton>
+            </nav>
+        </div>
+    </div>
+
+    <div class="w-50 mt-10 absolute bottom-0 left-0 ml-20">
+        <img src={Rafaela.src} alt="" class="h-50 w-50" />
+    </div>
+
+    <div
+        class="hidden flex-col w-[800px] h-[500px] place-content-center lg:grid lg:grid-cols-2 gap-4 p-10 absolute mr-20 -right-4 bottom-10"
+    >
+        <div
+            class="box-content h-[250px] w-[400px] p-2 col-start-1 col-end-2 text-6xl bg-[#2ec4b6] content-center relative rounded-2xl text-white font-black"
+        >
+            <div>Tu cabello es el 90% de tu selfie</div>
+        </div>
+        <div class="box-content h-[250px] w-[250px] p-2"></div>
+        <div class="box-content h-[250px] w-[250px] p-2"></div>
+        <div
+            class="box-content h-[250px] w-[250px] p-2 col-start-2 col-end-3 font-serif border-10 border-[#2ec4b6] font-medium rounded-xl"
+        >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+        </div>
+    </div>
+</div>

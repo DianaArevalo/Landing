@@ -1,0 +1,37 @@
+---
+import Header from "../components/Header.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header />
+		<main class="text-black">
+			<slot />
+		</main>
+	</body>
+</html>
+<style is:global>
+	@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Riot&display=swap");
+	html {
+		font-family: "Cardo", serif;
+		background: #2ec4b6;
+		background-size: 224px;
+	}
+</style>
+
+<!-- cbf3f0 ffffff  -->
