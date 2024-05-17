@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+import nutria from "../assets/nutriatech.png";
+---
+
+<Layout title="404 not found">
+    <div
+        class="content-div bg-[rgb(255,255,255)] w-[95%] h-dvh m-5 md:m-10 rounded-2xl outline-offset-0 shadow-2xl touch-auto mb-10 place-content-center items-center justify-center text-center flex-row"
+    >
+        <div class="content-img">
+            <img src={nutria.src} alt="" />
+            <p class="content-number font-bold text-7xl text-[#2ec4b6]">404</p>
+        </div>
+        <div class="content-description">
+            <p class="content-error font-serif text-2xl">
+                UPSSS !!!!! Algo salio mal, pagina no encontrada.
+            </p>
+            <button
+                class="flex-row justify-center text-black hover:text-white text-3xl cursor-pointer hover:bg-[#2ec4b6] focus:ring-4 focus:outline-none focus:ring-[#cbf3f0]/50 rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#ffffff]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-70 hover:opacity-100 text-md font-bold uppercase"
+                >Sacame de aqui!</button
+            >
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .content-div {
+        position: fixed;
+        top: 0em;
+        text-align: center;
+    }
+
+    .content-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 300px;
+            display: block;
+            animation: animates 2s linear infinite alternate;
+        }
+    }
+
+    .content-number {
+        position: absolute;
+        font-size: 5.5rem;
+        font-family: $font;
+        top: 9rem;
+        animation: animatestext 2s linear infinite alternate;
+    }
+
+    .content-error {
+        width: 50%;
+        margin: 2em auto;
+    }
+
+    @keyframes animates {
+        0% {
+            transform: translateX(5%);
+        }
+        100% {
+            transform: translateX(-5%);
+        }
+    }
+    @keyframes animatestext {
+        0% {
+            transform: translateX(5deg);
+        }
+        100% {
+            transform: translateX(-5deg);
+        }
+    }
+</style>
