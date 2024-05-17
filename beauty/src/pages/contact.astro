@@ -1,7 +1,8 @@
 ---
 import InteractiveBgAbout from "../components/InteractiveBgAbout.astro";
 import pretty from "../assets/pretty-woman.jpg";
-import AboutButton from "../components/AboutButton.astro";
+
+//aqui va el javascript
 ---
 
 <div
@@ -15,49 +16,24 @@ import AboutButton from "../components/AboutButton.astro";
         </InteractiveBgAbout>
     </div>
     <div class="min-h-screen w-[50%] bg-transparent">
-        <form action="" class="p-10">
-            <div class="mb-10">
-                <label class="text-body block text-lx font-bold uppercase">
-                    nombre*
-                </label>
-                <input
-                    class="w-full mt-3 p-3 border rounded-xl bg-body"
-                    type="text"
-                    name="email"
-                    placeholder="Ingresa tu nombre"
-                />
-            </div>
+        <script
+            type="text/javascript"
+            src="https://opnform.com/widgets/iframeResize.min.js"></script>
+        <iframe
+            style="border:none;width:100%;"
+            id="form-contactanos-tbni3d"
+            src="https://opnform.com/forms/contactanos-tbni3d"></iframe>
+        <script type="text/javascript">
+            iFrameResize(
+                { log: false, checkOrigin: false },
+                "#form-contactanos-tbni3d",
+            );
+        </script>
 
-            <div class="mb-10">
-                <label class="text-body block text-lx font-bold uppercase">
-                    email*
-                </label>
-                <input
-                    class="w-full mt-3 p-3 border rounded-xl bg-body"
-                    type="email"
-                    name="email"
-                    placeholder="Ingresa tu nombre"
-                />
-            </div>
-
-            <div class="mb-10">
-                <label class="uppercase text-body block text-lx font-bold">
-                    comentarios*
-                </label>
-                <input
-                    class="w-full mt-3 p-3 border rounded-xl bg-body"
-                    type="password"
-                    name="password"
-                    placeholder="Ingresa tu experiencia con nosotros"
-                />
-            </div>
-            <div class="p-10">
-                <AboutButton> Enviar </AboutButton>
-            </div>
-        </form>
         <!-- redes sociales -->
     </div>
 </div>
+
 <style>
     .pretty {
         position: relative;
