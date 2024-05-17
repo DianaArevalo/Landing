@@ -6,35 +6,36 @@ import pocion from "../assets/pocion.png";
 ---
 
 <section
-    class="md:w-[75%] w-50 top-0 md:bg-gradient-to-r md:from-[#cbf3f0] md:via-[#2ec4b6] md:to-blue-700 md:rounded-2xl md:shadow-2xl md:shadow-neutral-900 md:p-0 text-center"
+    class="md:w-[75%] w-50 top-0 md:rounded-2xl md:shadow-2xl md:bg-[rgb(255,255,255)] md:shadow-neutral-900 md:p-0 text-center"
 >
+    <!-- md:bg-gradient-to-r md:from-[#cbf3f0] md:via-[#2ec4b6] md:to-blue-700 -->
     <div
-        class="hidden md:w-full md:mr-10 md:grid md:grid-cols-2 justify-around"
+        class="hidden md:w-full md:mr-10 md:grid md:grid-cols-2 justify-around bg-gradient-to-r md:from-[#cbf3f0] md:to-[#2ec4b6]/70 md:rounded-2xl"
     >
         <div class="p-10">
             <div
-                class="text-center justify-center items-center size-60 bg-[rgb(255,255,255)] rounded-2xl hover:skew-y-12 outline-double outline-3 outline-offset-2 outline-white"
+                class="imgdiv text-center justify-center items-center bg-[rgb(255,255,255)] size-60 rounded-2xl outline-double outline-3 outline-offset-2 outline-[#2ec4b6] outline-8"
             >
                 <img src={angeluz.src} alt="" width="400px" class="" />
             </div>
         </div>
         <div class="p-10 m-10">
             <div
-                class="text-center justify-center items-center size-60 bg-[rgb(255,255,255)] rounded-2xl hover:skew-y-12 outline-double outline-3 outline-offset-2 outline-white"
+                class="imgdiv text-center justify-center items-center size-60 bg-[rgb(255,255,255)] rounded-2xl outline-double outline-3 outline-offset-2 outline-[#2ec4b6] outline-8"
             >
                 <img src={kaba.src} alt="" width="400px" class="" />
             </div>
         </div>
         <div class="p-10">
             <div
-                class="text-center justify-center items-center size-60 bg-[rgb(255,255,255)] rounded-2xl hover:skew-y-12 outline-double outline-3 outline-offset-2 outline-white"
+                class="imgdiv text-center justify-center items-center size-60 bg-[rgb(255,255,255)] rounded-2xl outline-double outline-3 outline-offset-2 outline-[#2ec4b6] outline-8"
             >
                 <img src={milagros.src} alt="" width="400px" class="" />
             </div>
         </div>
         <div class="p-10 m-10">
             <div
-                class="text-center justify-center items-center size-60 bg-[rgb(255,255,255)] rounded-2xl hover:skew-y-12 outline-double outline-3 outline-offset-2 outline-white"
+                class="imgdiv text-center justify-center items-center size-60 bg-[rgb(255,255,255)] rounded-2xl outline-double outline-3 outline-offset-2 outline-[#2ec4b6] outline-8"
             >
                 <img src={pocion.src} alt="" width="400px" class="" />
             </div>
@@ -42,4 +43,18 @@ import pocion from "../assets/pocion.png";
     </div>
 </section>
 
-<style></style>
+<style>
+    img {
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .imgdiv {
+        filter: saturate(1);
+    }
+
+    .imgdiv:hover {
+        transform: scale(1.5);
+        filter: saturate(2);
+    }
+</style>
