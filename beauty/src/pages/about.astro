@@ -1,4 +1,6 @@
 ---
+Title: "about";
+
 import AboutButton from "../components/AboutButton.astro";
 import image from "../assets/about.jpg";
 
@@ -13,14 +15,15 @@ import InteractiveBgAbout from "../components/InteractiveBgAbout.astro";
             <span
                 class="text-2xl md:text-5xl font-thin font-serif text-teal-400"
                 >Nuestro</span
-            > Beauty!!
+            >
+            <a href="/">Beauty!!</a>
         </h3>
         <h1 class="text-4xl md:text-7xl p-8 mb-5">Sin Cambios no hay vida</h1>
         <p class="p-8 mb-5 text-sm md:text-2xl">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
             iusto nulla facere sit? Sint, quam.
         </p>
-        <AboutButton>
+        <AboutButton href="#">
             Aprende sobre Beauty!!
             <svg
                 slot="after"
