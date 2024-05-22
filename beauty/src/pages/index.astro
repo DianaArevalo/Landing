@@ -7,9 +7,11 @@ import Contact from "./contact.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="text-black justify-center items-center place-content-center">
+	<main
+		class="text-black justify-center items-center place-content-center min-h-full"
+	>
 		<section
-			class="bg-[rgb(255,255,255)] w-[95%] h-screen m-5 md:m-10 rounded-2xl outline-offset-0 shadow-2xl overflow-auto touch-auto place-content-center"
+			class="bg-[rgb(255,255,255)] w-[95%] m-5 md:m-10 rounded-2xl outline-offset-0 shadow-2xl overflow-auto touch-auto place-content-center bottom-0"
 		>
 			<About />
 			<Content />

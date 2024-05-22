@@ -11,6 +11,7 @@ import InteractiveBgAbout from "../components/InteractiveBgAbout.astro";
     class="flex relative min-h-full"
     transition:name="about"
     transition:animate="initial"
+    transition:persist
 >
     <div class="w-[50%]">
         <h3
@@ -20,9 +21,9 @@ import InteractiveBgAbout from "../components/InteractiveBgAbout.astro";
                 class="text-2xl md:text-5xl font-thin font-serif text-teal-400"
                 >Nuestro</span
             >
-            <a href="/">Beauty!!</a>
+            <a href="/" class="underline">Beauty!!</a>
         </h3>
-        <h1 class="text-4xl md:text-7xl p-8 mb-5">Sin Cambios no hay vida</h1>
+        <h1 class="text-4xl md:text-5xl p-8 mb-5">Sin Cambios no hay vida</h1>
         <p class="p-5 mb-5 text-sm md:text-2xl">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
             iusto nulla facere sit? Sint, quam.
@@ -30,26 +31,6 @@ import InteractiveBgAbout from "../components/InteractiveBgAbout.astro";
         <AboutButton href="https://www.instagram.com/carolare___/">
             Aprende sobre Beauty!!
         </AboutButton>
-
-        <a
-            href="/"
-            class="relative inset-0 bottom-0 m-auto w-full h-full flex justify-center"
-        >
-            <svg width="50" height="50" viewBox="0 0 512 512"
-                ><path
-                    fill="none"
-                    stroke="#2ec4b6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="32"
-                    d="M249.38 336L170 256l79.38-80M181.03 256H342"></path><path
-                    d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
-                    fill="none"
-                    stroke="#2ec4b6"
-                    stroke-miterlimit="10"
-                    stroke-width="32"></path></svg
-            ></a
-        >
     </div>
 
     <InteractiveBgAbout>
