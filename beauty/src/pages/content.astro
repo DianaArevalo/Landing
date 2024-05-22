@@ -1,14 +1,17 @@
 ---
 Title: "content";
 
-import AboutButton from "../components/AboutButton.astro";
 import InteractiveBgCosmetic from "../components/InteractiveBgCosmetic.astro";
 import InteractiveBgBeauty from "../components/InteractiveBgBeauty.astro";
 import InteractiveBgHair from "../components/InteractiveBgHair.astro";
 import InteractiveBgTakeCare from "../components/InteractiveBgTakeCare.astro";
 ---
 
-<section class="flex-col min-h-full p-10">
+<section
+    class="flex-col min-h-full p-10"
+    transition:name="name"
+    transition:animate="initial"
+>
     <div class="flex">
         <div class="w-[50%] bg-transparent min-h-full p-5">
             <h1
@@ -22,7 +25,12 @@ import InteractiveBgTakeCare from "../components/InteractiveBgTakeCare.astro";
                 nobis soluta illo, quam odio rem, repellat laborum quia amet
                 odit ea?
             </p>
-            <AboutButton> Leer mas </AboutButton>
+            <a
+                href="/products"
+                class="ml-5 mb-5 text-sm rounded-3xl border-2 border-black p-5 font-bold uppercase place-content-center"
+            >
+                Leer mas</a
+            >
         </div>
         <InteractiveBgCosmetic />
     </div>
@@ -39,7 +47,12 @@ import InteractiveBgTakeCare from "../components/InteractiveBgTakeCare.astro";
                 Cupiditate nemo quisquam magnam, numquam obcaecati aliquid ipsam
                 dolore ullam harum amet in qui itaque maxime
             </p>
-            <AboutButton> Leer mas </AboutButton>
+            <a
+                href="/products"
+                class="ml-5 mb-5 text-sm rounded-3xl border-2 border-black p-5 font-bold uppercase place-content-center"
+            >
+                Leer mas</a
+            >
         </div>
     </div>
     <div class="flex">
@@ -53,7 +66,12 @@ import InteractiveBgTakeCare from "../components/InteractiveBgTakeCare.astro";
                 recusandae earum accusantium est fugit reiciendis deleniti,
                 impedit id laboriosam, explicabo, ex saepe?
             </p>
-            <AboutButton> Leer mas </AboutButton>
+            <a
+                href="/products"
+                class="ml-5 mb-5 text-sm rounded-3xl border-2 border-black p-5 font-bold uppercase place-content-center"
+            >
+                Leer mas</a
+            >
         </div>
         <InteractiveBgHair />
     </div>
@@ -71,12 +89,40 @@ import InteractiveBgTakeCare from "../components/InteractiveBgTakeCare.astro";
                 voluptatum dolores eum, fuga molestias? Delectus cumque
                 cupiditate, eum iusto animi ab.
             </p>
-            <AboutButton> Leer mas </AboutButton>
+            <a
+                href="/products"
+                class="ml-5 mb-5 text-sm rounded-3xl border-2 border-black p-5 font-bold uppercase place-content-center"
+            >
+                Leer mas</a
+            >
         </div>
     </div>
     <div
         class="p-10 place-content-center justify-center items-center text-center"
     >
-        <AboutButton> Nuestro Catalogo</AboutButton>
+        <a
+            href="https://www.instagram.com/carolare___/"
+            class="ml-5 mb-5 text-sm rounded-3xl border-2 border-black p-5 font-bold uppercase place-content-center"
+            >Nuestro Catalogo</a
+        >
+        <a
+            href="/"
+            class="relative inset-0 m-auto mt-10 w-full h-full flex justify-center"
+        >
+            <svg width="50" height="50" viewBox="0 0 512 512"
+                ><path
+                    fill="none"
+                    stroke="#2ec4b6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M249.38 336L170 256l79.38-80M181.03 256H342"></path><path
+                    d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                    fill="none"
+                    stroke="#2ec4b6"
+                    stroke-miterlimit="10"
+                    stroke-width="32"></path></svg
+            ></a
+        >
     </div>
 </section>
