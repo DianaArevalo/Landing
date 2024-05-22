@@ -6,7 +6,12 @@ import TakeCare from "../assets/takeCare.jpg";
 <section
     class="size-[50%] relative top-0 overflow-hidden text-center justify-center items-center block"
 >
-    <video src={video} autoplay loop></video>
+    <video
+        src={video}
+        autoplay
+        loop
+        transition:name="media-player-takeC"
+        transition:persist></video>
     <div class="take">
         <img src={TakeCare.src} alt="" class="rounded-2xl" />
     </div>

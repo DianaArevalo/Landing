@@ -6,7 +6,13 @@ import video from "../assets/video-loop-3.mp4";
 <section
     class="w-full min-h-full relative top-0 overflow-hidden text-center justify-center items-center block"
 >
-    <video transition:persist src={video} autoplay loop></video>
+    <video
+        transition:persist
+        src={video}
+        autoplay
+        loop
+        transition:name="media-player-about"
+        transition:persist></video>
     <!-- slot de la imagen -->
     <slot />
 </section>

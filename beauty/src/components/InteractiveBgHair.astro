@@ -6,7 +6,12 @@ import hair from "../assets/hair.jpg";
 <section
     class="size-[50%] relative top-0 overflow-hidden text-center justify-center items-center block"
 >
-    <video src={video} autoplay loop></video>
+    <video
+        src={video}
+        autoplay
+        loop
+        transition:name="media-player-hair"
+        transition:persist></video>
     <div class="hair">
         <img src={hair.src} alt="" class="rounded-2xl" />
     </div>
